@@ -1,3 +1,30 @@
+Version 2.4.2 released 2013-02-05
+
+* Fixed issue in mochiweb_response introduced in v2.4.0
+  https://github.com/mochi/mochiweb/pull/100
+
+Version 2.4.1 released 2013-01-30
+
+* Fixed issue in mochiweb_request introduced in v2.4.0
+  https://github.com/mochi/mochiweb/issues/97
+* Fixed issue in mochifmt_records introduced in v2.4.0
+  https://github.com/mochi/mochiweb/issues/96
+
+Version 2.4.0 released 2013-01-23
+
+* Switch from parameterized modules to explicit tuple module calls for
+  R16 compatibility (#95)
+* Fix for mochiweb_acceptor crash with extra-long HTTP headers under
+  R15B02 (#91)
+* Fix case in handling range headers (#85)
+* Handle combined Content-Length header (#88)
+* Windows security fix for `safe_relative_path`, any path with a
+  backslash on any platform is now considered unsafe (#92)
+
+Version 2.3.2 released 2012-07-27
+
+* Case insensitive match for "Connection: close" (#81)
+
 Version 2.3.1 released 2012-03-31
 
 * Fix edoc warnings (#63)
